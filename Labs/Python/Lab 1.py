@@ -4,13 +4,16 @@ Created on Mon Feb 15 13:29:58 2021
 
 @author: MoHTeP
 """
+# Практическая работа №1. Построение графиков в Python
 
-# Задание 1
+
+
+
 
 import matplotlib.pyplot as plt
 # % matplotlib  inline
  
-plt.plot([1, 2, 3, 4, 5], [1, 2, 3, 4, 5])
+plt.plot([1, 2, 3, 4, 5], [1, 2, 3, 4, 5]) # Отмечаем точки на графике
  
 plt.show()
  
@@ -18,13 +21,17 @@ plt.show()
 
 
 
-# Задание 2
+
  
 import matplotlib.pyplot as plt
 import numpy as np
+
+# Задаем переменные
  
 x = np.linspace(0, 10, 50)
 y = x
+
+# Оформляем график
  
 plt.title("Линейная зависимость y = x")
 plt.xlabel("x")
@@ -36,14 +43,19 @@ plt.show()
 
 
 
-# Задание 3
  
 import matplotlib.pyplot as plt
 import numpy as np
+
+# Задаем переменные для 2х графиков
  
 x = np.linspace(0, 10, 50)
 y1 = x
+
 y2 = [i**2 for i in x]
+
+# Оформляем график
+
 plt.title("Зависимости: y1 = x, y2 = x^2")
 plt.xlabel("x")
 plt.ylabel("y1, y2")
@@ -54,22 +66,29 @@ plt.show()
 
 
 
-# Задание 4
+
  
 import matplotlib.pyplot as plt
 import numpy as np
  
+# Задаем переменные
+
 x = np.linspace(0, 10, 50)
 y1 = x
+
 y2 = [i**2 for i in x]
+
+
+# Создаем 2 графика
+
 plt.figure(figsize = (9,9))
 plt.subplot(2, 1, 1)
-plt.plot(x, y1)
+plt.plot(x, y1) # Первый график
 plt.title("Зависимости: у1 = х, у2 = х^2")
 plt.ylabel("y1", fontsize = 14)
 plt.grid(True)
 plt.subplot(2, 1, 2)
-plt.plot(x, y2)
+plt.plot(x, y2) # Второй график
 plt.xlabel("x", fontsize = 14)
 plt.ylabel("y2", fontsize = 14)
 plt.grid(True)
@@ -79,11 +98,13 @@ plt.show()
 
 
 
-# Задание 5
+
  
 import matplotlib.pyplot as plt
 import numpy as np
  
+# Построение диаграммы
+
 fruits = ["аппле", "пеач", "оранге", "бананаа!1", "милонов"]
 counts = [34, 25, 43, 31, 17]
 plt.bar(fruits, counts)
@@ -95,7 +116,7 @@ plt.show()
 
 
 
-# Задание 6
+
  
 import matplotlib.pyplot as plt
 import numpy as np
