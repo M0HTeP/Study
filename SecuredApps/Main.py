@@ -19,7 +19,6 @@ MENU_XML = ["Create XML", "Write string in XML", "Read XML", "Deleted XML", "Mai
 
 MENU_ZIP = ["Create ZIP", "Add file in ZIP", "Read ZIP", "Deleted ZIP", "Main menu"]
 
-# https://docs-python.ru/packages/modul-psutil-python/statistika-ispolzovaniia-diska/
 def disk_information():
     template = "%-17s %8s %8s %8s %5s%% %9s %s"
     print(template % ("Device", "Total", "Used", "Free", "Use ", "Type",
